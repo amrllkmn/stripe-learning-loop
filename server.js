@@ -23,4 +23,23 @@ app.post('/create-checkout-session', async (req, res) => {
   res.redirect(303, session.url);
 });
 
+app.get('/products', async (req, res) => {
+  res.status(200).json({
+    data:{
+      line_items: [
+        {
+          item_name: "The cover of Stubborn Attachments",
+          price_id: 'pr_1234',
+          price: 20
+        },
+        {
+          item_name: "The cover of Stubborn Attachments 2: Electric Bogaloo",
+          price_id: 'pr_5678',
+          price: 35
+        },
+      ],
+    }
+  })
+})
+
 app.listen(4242, () => console.log('Running on port 4242'));
