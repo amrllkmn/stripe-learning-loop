@@ -4,11 +4,14 @@
   "dependencies": {
     "@stripe/react-stripe-js": "^1.0.0",
     "@stripe/stripe-js": "^1.0.0",
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "^3.4.0",
-    "stripe": "^8.202.0"
+    "stripe": "^8.202.0",
+    "swr": "^1.2.2"
   },
   "devDependencies": {
     "concurrently": "4.1.2"
